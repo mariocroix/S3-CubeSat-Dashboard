@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: black;
+  color: #e0e0e0;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1150px;
+}
+
+.chart-item {
+  flex: 1 1 calc(50% - 20px);
+  max-width: 45%;
+  min-width: 280px;
+  border-radius: 12px;
+  padding: 20px 20px 10px 20px;
+  background-color: rgba(21,22,25,255);
+  border: 0.8px solid #444;
+  color: #e0e0e0;
+}
+
+.latest-value {
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+  padding: 10px;
+  border-radius: 8px;
+  width: fit-content;
+  margin: 5px auto;
+}
+
+@media (max-width: 768px) {
+  .chart-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
